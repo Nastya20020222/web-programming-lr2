@@ -26,4 +26,8 @@ body{
     bottom: 0;
     width: 100%;
 }
-.lol{}
+.header .language{
+    position:absolute;
+    right:30px;
+    top:0px;
+}
