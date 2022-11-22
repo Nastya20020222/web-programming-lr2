@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Иван Мальков, Анастасия Макурова. ФБИ-02. Лабораторная работа 6 </title>
-        <link rel="lab6.css">
+        <link rel="stylesheet" href="lab6.css" type="text/css">
         <script>
             console.log('Всем привет!!!!!!!!!!!!!');
 
@@ -17,12 +17,13 @@
     <body>
         <div class="header"  id="header" onclick="party1()">
             <div id="student" onclick="party2()">   Мальков Иван</div>
-                <div class="lenguage">
-                    <input type="button" onclick="setRussian()" value="ru">
-                    <input type="button" onclick="setEnglish()" value="en">
-                </div>
+                
         </div>
         <div class="content">
+            <div class="lenguage">
+                <input type="button" onclick="setRussian()" value="ru">
+                <input type="button" onclick="setEnglish()" value="en">
+            </div>
             <form>
                 <div id="user-data">
                     <div>
@@ -43,6 +44,32 @@
                     </div>
                 </div>
             </form>
+            <div >
+                Что из этого полезно?
+                <table>
+                    <tr>
+                        <td onclick="error()">
+                                <img src="beer-belly.jpg">
+                                <img src="png-transparent-cross-delete-remove-cancel-abort-red-reject-tick-locked-x-thumbnail.png" class="check">
+                               
+                        </td>
+                        <td onclick="check()">
+                                <img src="mozhno-li-sobakam-est-brokkoli-photo-big.jpg">
+                                <img src="png-transparent-green-check-check-mark-tick-tick-angle-leaf-plant-stem-thumbnail.png" class="check">
+                              
+                        </td>
+                        <td  onclick="error2()">
+                                <img src="049149a3e98aeaa6d5ae85e91baa71b5.jpg" >
+                                <img src="png-transparent-cross-delete-remove-cancel-abort-red-reject-tick-locked-x-thumbnail.png" class="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div id="vred1">Пиво</div></td>
+                        <td><div id="vred2">Брокколи</div></td>
+                        <td><div id="vred3">Водка</div></td>
+                    </tr>
+            </table>
+            </div>
         </div>
         <div class="footer" id="footer" onclick="party3()">
             Факультет бизнеса, фби-02, 3 курс, 2022

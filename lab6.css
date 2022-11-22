@@ -1,33 +1,80 @@
 body{
     font-family: Arial,Helvetica, sans-serif;
     margin: 0;
+    background-color: #fffff0;
 }
 .header {
-    background-color: #333333;
-    color:#ffe4c4;
+    color: white;
+    background: black;
     font-size: 20px;
-    font-weight:bold;
-    text-align: left;
     height: 80px;
     line-height: 80px;
     padding-left: 30px;
 }
 .content{
-    padding-bottom: 40px;
 }
 .footer{
     background-color:#333;
     color: #888;
-    padding: 30px;
-    height: 20px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    padding-right: 20px;
+    height: 30px;
     line-height: 30px;
     padding-right: 20px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    right: 0;
+    left:0;
 }
-.header .language{
+.Svetofor{
+    border: #333;
+    border-width: 5px;
+}
+#circle {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+  }
+#student{
+    width: 200px;
+    height: 80px;
+  }
+img{
+    width: 200px;
+}
+
+img.check {
+}
+img {
+    width: 200px;
+}
+таблица стилей агента пользователя
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    font-variant: normal;
+}
+body {
+    font-family: Arial,Helvetica, sans-serif;
+    margin: 0;
+    background-color: #fffff0;
+}
+img.check{
+    margin-left:200px;
     position:absolute;
-    right:30px;
-    top:0px;
+    display: none;
 }
+

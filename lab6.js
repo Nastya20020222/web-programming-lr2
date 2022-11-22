@@ -70,3 +70,16 @@ function party3(){
     let color ='rgb(' + r + ',' + g + ',' + b + ')';
     document.getElementById('footer').style.backgroundColor=color;
 }
+function error(){
+    document.getElementById('vred1').innerHTML='Неверно';
+    document.getElementsByClassName('check')[0].style.display='block';
+}
+function error2(){
+    document.getElementById('vred3').innerHTML='Неверно';
+    document.getElementsByClassName('check')[1].style.display='block';
+
+}
+function check(){
+    document.getElementById('vred2').innerHTML="Верно";
+    document.getElementsByClassName('check')[2].style.display='block';
+}
