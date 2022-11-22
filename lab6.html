@@ -15,32 +15,36 @@
         <script src="lab6.js"></script>
     </head>
     <body>
-        <div class="header">
-            <div id="student">   Мальков Иван</div>
+        <div class="header"  id="header" onclick="party1()">
+            <div id="student" onclick="party2()">   Мальков Иван</div>
                 <div class="lenguage">
                     <input type="button" onclick="setRussian()" value="ru">
                     <input type="button" onclick="setEnglish()" value="en">
                 </div>
-            
-            <div>
-                <span id="your-name">Ваше имя</span>: <input type="text" id="input-name" placeholder="Введите имя">
-            </div>
-
-            <div>
-                <span id="your-surname">Ваша фамилия</span>: <input type="text" id="input-surname" placeholder="Введите фамилию">
-            </div>
-
-            <div>
-                <span id="your-age">Ваш возраст</span>: <input type="number" id="input-age" placeholder="Введите возраст">
-            </div>
-
-            <div>
-                <input type="button" value="Ок" id="ok-button">
-                <input type="reset" value="Отмена" id="reset-button">
-            </div>
-        
         </div>
-        <div class="footer" id="footer">
+        <div class="content">
+            <form>
+                <div id="user-data">
+                    <div>
+                        <span id="your-name">Ваше имя</span>: <input type="text" id="input-name" placeholder="Введите имя">
+                    </div>
+
+                    <div>
+                        <span id="your-surname">Ваша фамилия</span>: <input type="text" id="input-surname" placeholder="Введите фамилию">
+                    </div>
+
+                    <div>
+                        <span id="your-age">Ваш возраст</span>: <input type="number" id="input-age" placeholder="Введите возраст">
+                    </div>
+
+                    <div>
+                        <input type="button" value="Ок" id="ok-button" onclick="showAlert()">
+                        <input type="reset" value="Отмена" id="reset-button">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer" id="footer" onclick="party3()">
             Факультет бизнеса, фби-02, 3 курс, 2022
         </div>
     </body>
