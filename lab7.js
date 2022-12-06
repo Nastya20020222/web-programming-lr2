@@ -38,7 +38,7 @@ function makeStairs(){
     }
     let steps=document.querySelectorAll('.step');
     for(let i=0; i<steps.length; i++){
-        steps[i].style.left=(400+10*i)+'px';
+        steps[i].style.left=(480+10*i)+'px';
         steps[i].style.top=(80+80*i)+'px';
         steps[i].innerHTML='Блок номер '+(i+1);
     }
@@ -74,8 +74,28 @@ function tableT(){
     }
 }
 
+function stih(){
+    let steps=document.querySelectorAll('.string');
+    let block=document.querySelectorAll('.block');
+    for(let i=0;  i<steps.length; i++){
+        if(i<7){
+        steps[i].style.fontSize=(10+i)+'px';
+        steps[i].style.color='#'+(i*24);
+       // block[i].style.height=(150+i)+'px';
+        block[i].style.backgroundColor='#'+(245*i)
+        }
+        else{
+            steps[i].style.fontSize=(10+i)+'px';
+            steps[i].style.color='#'+(i*24); 
+        }
+    }
+    
+}
+
+
 function load (){
     makeStairs();
     Snow();
     tableT();
+    stih();
 }
