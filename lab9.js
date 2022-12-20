@@ -42,7 +42,12 @@ window.addEventListener('DOMContentLoaded',function(){
         inputs[i].addEventListener("blur", () => inputs[i].classList.remove('focused'));
         inputs[i].addEventListener("change", () => ch.innerHTML=inputs[i].value);
     }
-    
+    let inputss = this.document.querySelectorAll('input[type="number"]');
+    let ch2=this.document.querySelectorAll('.outputs');
+    for (let i=0;i<inputs.length;i++){
+        inputss[i].addEventListener("change", () => ch2[i].innerHTML=inputss[i].value);
+        
+    }
 });
 
 function colooor(event){
