@@ -17,3 +17,13 @@ function changeA(button){
     else
     button.innerHTML='Макурова'
 }
+function Tik(button){
+    if(button.innerHTML=='Нажми меня')
+    button.innerHTML='Ещё раз нажми';
+    else if (button.innerHTML=='Ещё раз нажми')
+    button.innerHTML='Я СКАЗАЛ ЕЩЁ';
+    else if (button.innerHTML=='Я СКАЗАЛ ЕЩЁ')
+    button.innerHTML='Начать сначала';
+    else
+    button.innerHTML='Нажми меня'
+}
