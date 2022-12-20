@@ -29,10 +29,11 @@ function Tik(button){
 }
 
 function showCoords(event){
-    event.target.innerHTML='x= ' + event.offsetX+', y= '+event.offsetY
+    event.target.innerHTML='x= ' + event.offsetX+', y= '+event.offsetY+', Ctrl='+event.ctrlKey+', shift= '+event.shiftKey+', Alt= '+event.altKey;
 }
 
 window.addEventListener('DOMContentLoaded',function(){
     let coords = this.document.querySelector('#coords');
     coords.addEventListener('mousemove',showCoords);
 });
+
