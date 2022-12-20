@@ -35,5 +35,16 @@ function showCoords(event){
 window.addEventListener('DOMContentLoaded',function(){
     let coords = this.document.querySelector('#coords');
     coords.addEventListener('mousemove',showCoords);
+    let inputs = this.document.querySelectorAll('input[type="text"]')
+    for (let i=0;i<inputs.length;i++){
+        inputs[i].addEventListener("focus", () => inputs[i].classList.add('focused'), true);
+        inputs[i].addEventListener("blur", () => inputs[i].classList.remove('focused'), true);
+    
+    }
+    
 });
+
+function colooor(event){
+
+}
 

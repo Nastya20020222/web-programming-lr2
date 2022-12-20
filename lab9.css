@@ -46,3 +46,7 @@ body{
     text-align: center;
     line-height: 500px;
 }
+.focused{
+    color: orange;
+    font-size: 25px;
+}
