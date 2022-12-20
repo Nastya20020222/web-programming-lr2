@@ -27,3 +27,12 @@ function Tik(button){
     else
     button.innerHTML='Нажми меня'
 }
+
+function showCoords(event){
+    event.target.innerHTML='x= ' + event.offsetX+', y= '+event.offsetY
+}
+
+window.addEventListener('DOMContentLoaded',function(){
+    let coords = this.document.querySelector('#coords');
+    coords.addEventListener('mousemove',showCoords);
+});

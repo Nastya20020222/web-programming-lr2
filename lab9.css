@@ -38,3 +38,11 @@ body{
     margin:auto;
     background-color:aquamarine;
 }
+#coords{
+    width: 500px;
+    height: 500px;
+    background-color: #888;
+    color:azure;
+    text-align: center;
+    line-height: 500px;
+}
